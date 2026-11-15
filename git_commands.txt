@@ -67,7 +67,7 @@ Student Email: koushiksai242@gmail.com
 21. git revert HEAD --no-edit
     Creates a new inverse commit that safely rolls back the changes of the latest commit without rewriting history.
 
-22. git remote add origin https://github.com/saikoushik1205/Git_Workflow_Assignment.git
+22. git remote add origin https://github.com/saikoushik1205/Git_Workflow_assignment.git
     Associates the local repository with the remote public GitHub repository named 'origin'.
 
 23. git remote -v
