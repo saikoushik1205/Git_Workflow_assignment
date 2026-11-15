@@ -1,0 +1,83 @@
+================================================================================
+GIT COMMANDS DOCUMENTATION - SOFTWARE DEVELOPMENT PRACTICES (SGA-2)
+Student Name : Sai Koushik Pallerla
+Student Email: koushiksai242@gmail.com
+================================================================================
+
+1. git init -b main
+   Initializes a new local Git repository with 'main' as the default initial branch.
+
+2. git config user.name "Sai Koushik Pallerla"
+   Sets the author name locally for all commits created within this repository.
+
+3. git config user.email "koushiksai242@gmail.com"
+   Configures the author email locally to associate commits with the author's identity.
+
+4. git status
+   Displays the current state of the working directory and staging area, showing tracked and untracked files.
+
+5. git add index.html about.html
+   Stages the initial HTML project files into the staging area preparing them for the commit.
+
+6. git commit -m "Initial commit: Add index.html and about.html"
+   Records the snapshot of staged files into repository history as the initial root commit.
+
+7. git add index.html
+   Stages the modified homepage containing updated course and project highlights.
+
+8. git commit -m "Update index.html with project highlights and course details"
+   Creates a second commit on the main branch recording the homepage modifications.
+
+9. git branch feature
+   Creates a new branch named 'feature' pointing to the current commit on main.
+
+10. git switch feature
+    Switches the active working branch from 'main' to 'feature'.
+
+11. git add about.html
+    Stages modifications made to about.html within the isolated feature branch.
+
+12. git commit -m "Add feature branch enhancements to about.html"
+    Records a commit exclusively on the feature branch capturing the new feature changes.
+
+13. git switch main
+    Switches the HEAD back to the 'main' branch in preparation for merging.
+
+14. git merge --no-ff feature -m "Merge feature branch into main"
+    Merges the 'feature' branch into 'main' with a dedicated merge commit, preserving explicit branch history.
+
+15. git log --oneline --graph --all
+    Displays a visual ASCII graph of all commits across all branches in compact format.
+
+16. git status --ignored
+    Lists both untracked and ignored files to verify that .gitignore rules function correctly.
+
+17. git add .gitignore
+    Stages the newly created .gitignore configuration file into the index.
+
+18. git commit -m "Add .gitignore to exclude .log files and temp/ directory"
+    Commits the ignore patterns ensuring *.log and temp/ remain untracked.
+
+19. git add draft_notes.txt
+    Stages a temporary draft file to demonstrate the undo workflow.
+
+20. git commit -m "Add temporary draft notes for undo demonstration"
+    Creates a commit that will subsequently be undone to demonstrate version control rollback.
+
+21. git revert HEAD --no-edit
+    Creates a new inverse commit that safely rolls back the changes of the latest commit without rewriting history.
+
+22. git remote add origin https://github.com/saikoushik1205/Git_Workflow_Assignment.git
+    Associates the local repository with the remote public GitHub repository named 'origin'.
+
+23. git remote -v
+    Lists the configured remote repository fetch and push URLs for verification.
+
+24. git push -u origin main
+    Uploads the local 'main' branch commits to the remote repository and sets upstream tracking.
+
+25. git push -u origin feature
+    Pushes the 'feature' branch to GitHub so instructors can inspect branch history and merge topology.
+
+26. git branch -a
+    Displays all local and remote-tracking branches available in the repository.
